@@ -1,16 +1,9 @@
 version: "3.1"
 services:
-        web:
-            image: httpd
-            ports:
-                - "8080:80"
-            volumes:
-                - ./:/usr/local/apache2/htdocs/
-            links:
-                - php
+
         php:
             build: ./
             volumes:
-                - ./:/usr/local/apache2/htdocs/
+                - ./:/var/www/html
             ports:
-                - "8181:80"
+                - "8080:80"
