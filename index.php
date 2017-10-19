@@ -1,5 +1,5 @@
 <?php
 
-	echo "Docker ... Docteur !";
+	echo "Bienvenue sur notre application PHP";
 
 ?>

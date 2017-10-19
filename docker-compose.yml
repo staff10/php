@@ -3,7 +3,19 @@ services:
 
         php:
             build: ./
+            links:
+                - php_db:db
             volumes:
                 - ./:/var/www/html
             ports:
                 - "8080:80"
+        php_db:
+            image: mariadb
+            environment:
+                MYSQL_ROOT_PASSWORD: esgi
+        phpmyadmin:
+            image: phpmyadmin/phpmyadmin
+            links:
+                - php_db:db
+            ports:
+                - 8181:80
