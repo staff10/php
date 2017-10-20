@@ -1,5 +1,5 @@
 <?php
-$host_name = "192.168.99.100";
+$host_name = "localhost";
 $database = "information_schema";
 $user_name = "root";
 $password = "esgi";
