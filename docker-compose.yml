@@ -13,9 +13,12 @@ services:
             image: mariadb
             environment:
                 MYSQL_ROOT_PASSWORD: esgi
+            ports:
+                - "3306:3306"
         phpmyadmin:
             image: phpmyadmin/phpmyadmin
             links:
                 - php_db:db
             ports:
-                - 8181:80
+                - "8181:80"
+
