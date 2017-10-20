@@ -14,6 +14,6 @@ echo '<p>La connexion au serveur MySQL a échoué: '.mysqli_connect_error().'</p
 else
 {
 echo '<p>Connexion au serveur MySQL établie avec succès.</p>';
-
+echo 'Binvenue sur le projet PHP';
 }
 ?>
